@@ -1,17 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,regular,500&display=swap" rel="stylesheet" />
     <title>Layout1</title>
 </head>
+
 <body>
     <div class="wrapper">
-        <header class="header"></header>
-        <main class="main"></main>
+        <header class="header">
+            <div class="header__container">
+                <a href="" class="header_logo">
+                    <img src="img/Logo.svg" alt="logo" />
+                </a>
+                <nav class="header__menu menu">
+                    <div class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Home</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">About</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Pages</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Services</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <a href="" class="header__cart cart-header">
+                    <span class="cart-header__text">Cart</span>
+                    <span class="cart-header__quantity">0</span>
+                </a>
+                <a href="" class="header__button button">Get started</a>
+                <button class="icon-menu" type="button"><span></span></button>
+            </div>
+        </header>
+
+        <main class="page">
+            <section class="page__main main">
+                <div class="main__container">
+                    <div class="main__content">
+                        <div class="main__header header-main">  
+                            <h1 class="header-main__title">
+                                Marketing solutions that grow your business.
+                            </h1>
+                            <div class="header-main__text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+                                    explicabo eum magni voluptate mollitia distinctio. Laudantium
+                                    illo quaerat, sint molestias ex itaque, reprehenderit
+                                    voluptatum accusamus quidem, provident quisquam non
+                                    accusantium!
+                                </p>
+                            </div>
+                            <div class="header-main__actions">
+                                <a href="" class="header-main__button button">Our services</a>
+                                <a href="" class="header-main__button button button_dark">Contact us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__images images-main">
+                        <div class="images-main__column">
+                            <div class="images-main__item images-main__item_1">
+                                <img src="./img/main/01.jpg" alt="Image" />
+                            </div>
+                            <div class="images-main__item images-main__item_2">
+                                <img src="./img/main/02.jpg" alt="Image" />
+                            </div>
+                        </div>
+                        <div class="images-main__column">
+                            <div class="images-main__item images-main__item_3">
+                                <img src="./img/main/03.jpg" alt="Image" />
+                            </div>
+                            <div class="images-main__item images-main__item_4">
+                                <img src="./img/main/04.jpg" alt="Image" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__clients clients">
+                <div class="clients__container">
+                    <h2 class="clients__title">TRUSTED BY startups and large enterprises</h2>
+                    <div class="clients__items">
+                        <div class="clients__item">
+                            <img src="./img/clients/01.svg" alt="client">
+                        </div>
+                        <div class="clients__item">
+                            <img src="./img/clients/02.svg" alt="client">
+                        </div>
+                        <div class="clients__item">
+                            <img src="./img/clients/03.svg" alt="client">
+                        </div>
+                        <div class="clients__item">
+                            <img src="./img/clients/04.svg" alt="client">
+                        </div>
+                        <div class="clients__item">
+                            <img src="./img/clients/05.svg" alt="client">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
         <footer class="footer"></footer>
     </div>
+    <script src="./js/script.js"></script>
 </body>
+
 </html>

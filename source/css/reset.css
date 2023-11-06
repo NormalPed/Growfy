@@ -1,11 +1,8 @@
 /*====================to null all default statements==================*/
-* {
+  *, *::before, *::after {
     padding: 0;
     margin: 0;
     border: 0;
-  }
-  
-  *, *:before, *:after {
     box-sizing: border-box;
   }
   
@@ -23,10 +20,7 @@
   
   html, body {
     height: 100%;
-    min-width: 320px;
-    font-size: 100%;
     line-height: 1;
-    font-size: 14px;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -34,6 +28,9 @@
   
   input, button, textarea {
     font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    color: inherit;
   }
   
   input::-ms-clear {
@@ -42,6 +39,7 @@
   
   button {
     cursor: pointer;
+    background-color: inherit;
   }
   
   button::-moz-focus-inner {
@@ -49,15 +47,16 @@
     border: 0;
   }
   
-  a, a:visited {
+  a {
     text-decoration: none;
+    color: inherit;
   }
   
   a:hover {
     text-decoration: none;
   }
   
-  ul li {
+  ul, ol,li {
     list-style: none;
   }
   
@@ -67,7 +66,7 @@
   
   h1, h2, h3, h4, h5, h6 {
     font-size: inherit;
-    font-weight: 400;
+    font-weight: inherit;
   }
   
   /*====================================================================*/
